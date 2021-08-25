@@ -15,7 +15,7 @@ body {
   font-size: 1rem;
   line-height: 1.4;
   font-weight: 400;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 }
 
 section {
@@ -51,6 +51,10 @@ strong {
   margin-top: 0.5rem;
   transition: all 0.5s ease;
   width: 100%;
+
+  &:hover {
+    box-shadow: 1px 1px 5px #b7b7b7;
+  }
 
   @include media-breakpoint-up(lg) {
     min-width: 180px;
@@ -114,7 +118,7 @@ header {
      align-items: center;
      position: relative;
      animation-name: logo;
-     animation-duration: 1s;
+     animation-duration: 1.2s;
      animation-timing-function: ease-in-out;
 
      @include media-breakpoint-down(md) {
@@ -144,14 +148,14 @@ header {
    .social-links {
       position: relative;
       animation-name: socialLinks;
-      animation-duration: 1.5s;
+      animation-duration: 1.7s;
       animation-timing-function: ease-out;
 
       @include media-breakpoint-down(md) {
         display: flex;
         justify-content: center;
         width: 100%;
-        margin: 0.5rem 0;
+        margin: 0.75rem 0;
 
         img {
           width: 35px;
@@ -215,6 +219,12 @@ header {
       margin-top: 8rem;
     }
   }
+
+  img {
+    @include media-breakpoint-down(lg) {
+      margin: 0 auto;
+    }
+  }
 }
 
 
@@ -237,10 +247,13 @@ header {
 
   form {
     text-align: center;
-    margin-top: 3rem;
     width: 600px;
-    margin: 3rem auto 0;
+    margin: 2rem auto 0;
     max-width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 3rem;
+    }
 
     input {
       border-radius: 50px;
@@ -253,25 +266,29 @@ header {
 
       &:focus {
         outline: 0;
-        box-shadow: 1px 2px 3px #b5b5b5;
-        background-color: #f8feff;
+        box-shadow: 1px 2px 5px #b5b5b5;
+        border-color: #000;
       }
 
       &[type="submit"] {
         background-color: $main-blue;
+
+        &:hover {
+          background-color: #0b5ed7;
+        }
       }      
 
       &::-webkit-input-placeholder { 
-        color: #bbb;
+        color: #aaa;
       }
       &:-moz-placeholder {
-        color: #bbb;
+        color: #aaa;
       }
       &::-moz-placeholder {
-        color: #bbb;
+        color: #aaa;
       }
       &:-ms-input-placeholder {
-        color: #bbb;
+        color: #aaa;
       } 
 
     }

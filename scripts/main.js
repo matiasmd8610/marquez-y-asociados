@@ -10,3 +10,7 @@ for (let item of buttonsToForm) {
         e.preventDefault();
     })
 }
+
+AOS.init({
+    once: false
+});

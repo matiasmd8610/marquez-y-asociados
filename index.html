@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Oxygen:wght@700&display=swap" rel="stylesheet">
 	<link rel="icon" href="images/favicon.png" type="image/png">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="styles/css/styles.css">
 	<title>Márquez & Asociados</title>
 </head>
@@ -15,7 +16,7 @@
 <body>
 
 	<!--- HEADER -->
-	<header>
+	<header itemscope itemtype="https://schema.org/WPHeader">
 		<nav class="navbar">
 			<div class="container">
 				<div class="logo">
@@ -40,7 +41,7 @@
 			<div class="hero-content container">
 				<h1>Comenzá <span>la meta</span> de construir tu propia</h1>
 				<p class="bajada">Ingresá a nuestro sistema y convertite en propietario <br>mediante aportes mensuales fijos y en pesos.</p>
-				<button type="button" class="btn btn-primary"> Conocé nuestros planes </button>
+				<button type="button" class="btn btn-primary" data-aos="fade-up" data-aos-duration="500">Conocé nuestros planes</button>
 			</div>
 		</section>
 
@@ -56,7 +57,7 @@
 					<div class="col-lg-6">
 						<h2>Luces Led bonificadas</h2>
 						<p>¡Ingresá en <strong>Junio</strong> y obtené el beneficio <br>de <strong>Luces LED</strong> para toda tu casa!</p>
-						<button type="button" class="btn btn-primary">¡Quiero ingresar!</button>
+						<button type="button" class="btn btn-primary" data-aos="fade-left" data-aos-duration="1000">¡Quiero ingresar!</button>
 					</div>
 				</div>
 			</div>
@@ -74,7 +75,7 @@
 					<input type="email" id="email" name="email" placeholder="Correo electrónico"><br>
 					<input type="text" id="prefijo" name="prefijo" placeholder="Ej: 11">
 					<input type="text" id="phone" name="phone" placeholder="Ej: 1234-1523"><br>
-					<input type="submit" value="Enviar" class="btn btn-primary"></input>
+					<input type="submit" value="Enviar" class="btn btn-primary" data-aos="fade-up" data-aos-duration="700">
 				</form>
 			</div>
 
@@ -102,7 +103,7 @@
 							<li>Hasta 84 cuotas fijas y en pesos con un	interés inigualable.</li>
 						</ul>
 		
-						<button type="button" class="btn btn-primary">Más info</button>
+						<button type="button" class="btn btn-primary" data-aos="fade-left" data-aos-duration="1000">Más info</button>
 					</div>
 				</div>
 	
@@ -117,19 +118,19 @@
 					<div>
 						<img class="img-fluid" src="images/75mts.png" alt="Línea Standard - Hasta 75 m2">
 						<p><strong>Línea Standard</strong> - Hasta 75 m2</p>
-						<button type="button" class="btn btn-primary">Más información</button>
+						<button type="button" class="btn btn-primary" data-aos="fade-right" data-aos-duration="500">Más información</button>
 					</div>
 		
 					<div>
 						<img class="img-fluid" src="images/150mts.png" alt="Línea Standard - Hasta 150 m2">
 						<p><strong>Línea Standard</strong> - Hasta 150 m2</p>
-						<button type="button" class="btn btn-primary">Más información</button>
+						<button type="button" class="btn btn-primary" data-aos="fade-up" data-aos-duration="700">Más información</button>
 					</div>
 		
 					<div>
 						<img class="img-fluid" src="images/151mts.png" alt="Línea Standard - Desde 151 m2">
 						<p><strong>Línea Standard</strong> - Desde 151 m2</p>
-						<button type="button" class="btn btn-primary">Más información</button>
+						<button type="button" class="btn btn-primary" data-aos="fade-left" data-aos-duration="1000">Más información</button>
 					</div>
 				</div>
 	
@@ -139,13 +140,14 @@
 	</main>
 
 	<!--- FOOTER -->
-	<footer>
+	<footer itemscope itemtype="https://schema.org/WPFooter">
 		<div class="container">
-			<h2>¡Vos también podés <br> mudarte a tu propia casa!</h2>
-			<button type="button" class="btn btn-primary"> Quiero que me contacten </button>
+			<h2>¡Vos también podés mudarte a tu propia casa!</h2>
+			<button type="button" class="btn btn-primary" data-aos="zoom-out-up">Quiero que me contacten</button>
 		</div>
 	</footer>
 
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="scripts/main.js"></script>
 </body>
 
