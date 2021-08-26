@@ -159,13 +159,17 @@ header {
         margin: 0.75rem 0;
 
         img {
-          width: 35px;
+          width: 38px;
           transition: all 0.5s ease;
         }
       }
 
      a:not(:last-child) {
        margin-right: 5px;
+       
+       @include media-breakpoint-down(md) {
+         margin-right: 8px;
+       }
      }
 
      a:hover {
