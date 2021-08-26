@@ -12,5 +12,6 @@ for (let item of buttonsToForm) {
 }
 
 AOS.init({
-    once: false
+    once: false,
+    disable: 'phone'
 });

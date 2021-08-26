@@ -365,7 +365,11 @@ header {
     text-align: center;
 
     &:after {
-      left: 35%;
+      left: 21%;
+      
+      @include media-breakpoint-up(lg) {
+        left: 35%;
+      }
     }
   }
 
@@ -457,7 +461,7 @@ footer {
 
 @keyframes socialLinks {
   0% {
-    right: -600px;
+    right: -500px;
   }
   100% {
     right: 0;
